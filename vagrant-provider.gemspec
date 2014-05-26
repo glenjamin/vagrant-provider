@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-provider"
-  spec.version       = "0.0.1"
+  spec.version       = "0.1.0"
   spec.authors       = ["Glen Mailer"]
   spec.email         = ["glenjamin@gmail.com"]
   spec.description   = %q{Vagrant plugin for provider swapping}
