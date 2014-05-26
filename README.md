@@ -1,29 +1,33 @@
-# Vagrant::Provider
+# Vagrant Provider Swapper
 
-TODO: Write a gem description
+Some rather hacky tricks to swap between different providers for a single
+vagrant machine without destroying anything.
+
+Useful for building a VM locally, then pushing up to a cloud provider,
+for example.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'vagrant-provider'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install vagrant-provider
+    vagrant plugin install provider
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+# list machines and providers
+$ vagrant provider list
 
-## Contributing
+Machines
+--------
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+default:
+    virtualbox (current)
+    vmware_fusion
+    digital_ocean
+
+# stash the current provider state for later
+$ vagrant provider stash [machine-name]
+
+# bring back the named provider state
+$ vagrant provider pick <provider> [machine-name]
+
+```

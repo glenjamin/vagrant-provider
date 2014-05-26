@@ -5,9 +5,9 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Glen Mailer"]
   spec.email         = ["glenjamin@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Vagrant plugin for provider swapping}
+  spec.summary       = %q{Vagrant plugin for provider swapping}
+  spec.homepage      = "http://github.com/glenjamin/vagrant-provider"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
