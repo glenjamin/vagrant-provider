@@ -8,7 +8,7 @@ for example.
 
 ## Installation
 
-    vagrant plugin install provider
+    vagrant plugin install vagrant-provider
 
 ## Usage
 
@@ -20,7 +20,7 @@ Machines
 --------
 
 default:
-    virtualbox (current)
+    virtualbox (active)
     vmware_fusion
     digital_ocean
 
